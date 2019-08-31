@@ -1,0 +1,32 @@
+<div class="backdrop" (click)="close()"></div>
+<div class="alert-box">
+  <div>
+    <button type="button" class="close" (click)="close()" data-dismiss="alert">
+      &times;
+    </button>
+    <form [formGroup]="AddUser">
+      <div>
+        <label>Name</label>
+        <input type="text" class="form-control" formControlName="name" />
+
+        <label>Department</label>
+        <input type="text" class="form-control" formControlName="department" />
+
+        <label>Designation</label>
+        <input type="text" class="form-control" formControlName="designation" />
+        <label>Email</label>
+        <input type="email" class="form-control" formControlName="email" />
+        <label>Password</label>
+        <input type="Password" class="form-control" formControlName="password" />
+      </div>
+      <div class="alert-box-actions">
+        <hr />
+        <div>
+          <button (click)="addUserDb()" class="btn btn-primary form-control">
+            Add User
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

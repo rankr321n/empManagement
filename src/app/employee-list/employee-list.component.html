@@ -1,0 +1,26 @@
+<!-- <div class="container-fluid"> -->
+<div class="panel panel-default">
+  <!-- <div class="panel-heading"> -->
+  <!-- <h1 class="panel-title">Heading</h1> -->
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th style="text-align: center">User Name</th>
+      <th style="text-align: center">User Department</th>
+      <th style="text-align: center">User Designation</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of emp">
+      <td style="text-align: center">
+        {{ item.Name }}
+      </td>
+
+      <td style="text-align: center">{{ item.Designation }}</td>
+      <td style="text-align: center">{{ item.Department }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,34 @@
+
+API refrence : http://dummy.restapiexample.com
+User API: https://reqres.in/
+
+"Create an employee management applications with following features:
+
+>> Initially login page will open, and after login user will redirect to dashboard page.
+>> On dashboard page: 
+       >> show the list of employee (only 5) with view more option. On click view more user will redirect to employee list page
+       >> show the list of recently added employee (only 5) with date of creation of the employee .
+
+>> On employee List  show the list of all employee with one search box for searching every field displayed in the list
+>> On list page, there will be a add employee option, when user click on add it should redirect to add employee page.
+>> When user click on the name detail of that employee should open
+>> On employee detail page, there will be a edit option, when user click on edit it should redirect to edit page with pre-populated values."
+
+"There will be 2 layout of the application:
+
+>> Authorized: with header, footer and side menu.
+>> Unauthorized: only footer, no header and no side menu
+
+Content: 
+
+>> Header: name of current page which is open(at left side), name of logged-in user and logout button(right side).
+>> Footer: any dummy copyright text (at center)
+>> Side menu: 
+      >> Dashboard
+     >> employee List
+     >> Add employee "
+
+"Admin Page:
+
+>> user list
+>> add user (popup)"

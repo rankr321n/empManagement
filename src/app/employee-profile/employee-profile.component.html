@@ -1,0 +1,245 @@
+<hr />
+<div class="container bootstrap snippet">
+  <div class="row">
+    <div class="col-sm-10"><h1>Add User</h1></div>
+    <div class="col-sm-2">
+      <a routerlink="user/dashboard/" class="pull-right"
+        ><img
+          title="Go back"
+          class="img-circle img-responsive"
+          src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"
+      /></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <!--left col-->
+
+      <div class="text-center">
+        <img
+          src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+          class="avatar img-circle img-thumbnail"
+          alt="avatar"
+        />
+        <!-- <h6>Upload a different photo...</h6> -->
+        <!-- <input type="file" class="text-center center-block file-upload"> -->
+      </div>
+      <hr />
+      <br />
+    </div>
+    <!--/col-3-->
+    <div class="col-sm-9">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab">EmployeeDetails</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+          <hr />
+          <form
+            class="form"
+            [formGroup]="registrationForm"
+            (ngSubmit)="addEmpDb()"
+          >
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="first_name"><h4>First name</h4></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="first_name"
+                  placeholder="first name"
+                  title="enter first name if any."
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('first_name').touched &&
+                    registrationForm.get('first_name').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="last_name"><h4>Last name</h4></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="last_name"
+                  placeholder="last name"
+                  title="enter last name if any."
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('last_name').touched &&
+                    registrationForm.get('last_name').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="phone"><h4>Phone</h4></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="phone"
+                  placeholder="enter phone"
+                  title="enter phone number if any."
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('phone').touched &&
+                    registrationForm.get('phone').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="contact"><h4>Emergency Contact</h4></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="contact"
+                  placeholder="enter mobile number"
+                  title="enter mobile number if any."
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('contact').touched &&
+                    registrationForm.get('contact').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="email"><h4>Email</h4></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  formControlName="email"
+                  placeholder="you@email.com"
+                  title="enter email."
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('email').touched &&
+                    registrationForm.get('email').errors
+                  "
+                >
+Required</pre
+                >
+                <!-- <span style="color:Red"  >Please Enter Valid Email</span>                           -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="email"><h4>Location</h4></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  formControlName="location"
+                  placeholder="somewhere"
+                  title="enter a location"
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('location').touched &&
+                    registrationForm.get('location').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="Joining"><h4>Joining Date</h4></label>
+                <input
+                  disabled
+                  type="date"
+                  class="form-control"
+                  formControlName="date"
+                  placeholder="Joining date"
+                  title="System automatically adds Joining date."
+                />
+                <!-- <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('date').touched &&
+                    registrationForm.get('date').errors
+                  "
+                >
+Required</pre
+                > -->
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6">
+                <label for="Govt Id"
+                  ><h4>Goverment Identification Number</h4></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="gid"
+                  placeholder="ADHAAR /PAN/ VOTERID"
+                  title="Enter a Govt Id"
+                />
+                <pre
+                  style="color:red"
+                  *ngIf="
+                    registrationForm.get('gid').touched &&
+                    registrationForm.get('gid').errors
+                  "
+                >
+Required</pre
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12">
+                <br />
+                <button
+                  class="btn btn-lg btn-success"
+                  [disabled]="!registrationForm.valid"
+                  type="submit"
+                >
+                  <i class="glyphicon glyphicon-ok-sign"></i> Save
+                </button>
+
+                <button class="btn btn-lg" type="reset">
+                  <i class="glyphicon glyphicon-repeat"></i> Reset
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <hr />
+        </div>
+      </div>
+      <!--/tab-pane-->
+    </div>
+    <!--/tab-content-->
+  </div>
+  <!--/col-9-->
+</div>
+<!--/row-->

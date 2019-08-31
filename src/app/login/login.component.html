@@ -1,0 +1,80 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img
+        src="http://www.dldbcollegepauni.com/adminlogin/img/admin-login-icon-15.png"
+        id="icon"
+        alt="User Icon"
+      />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm">
+      <input
+        type="email"
+        id="login"
+        class="fadeIn second"
+        name="login"
+        placeholder="username@domain.com"
+        formControlName="username"
+      />
+      <div
+        style="color:red"
+        *ngIf="
+          loginForm.get('username').touched && loginForm.get('username').errors
+        "
+      >
+        *Required field
+      </div>
+
+      <!-- <p *ngIf="loginForm.get('username').errors?.minlength">
+        Should be min 6 characters
+      </p> -->
+
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        name="login"
+        placeholder="password"
+        formControlName="password"
+      />
+      <!-- <div
+        style="color:red"
+        *ngIf="
+          loginForm.get('password').touched &&
+          loginForm.get('password').errors.required
+        "
+      >
+        *Required field
+      </div> -->
+      <!-- <p *ngIf="loginForm.get('password').errors?.minlength">
+        Min 6 characters
+      </p> -->
+      <div>
+        <input
+          type="submit"
+          (click)="onSubmit()"
+          [disabled]="!loginForm.valid"
+          class="fadeIn fourth"
+          value="Log In"
+        />
+      </div>
+
+      <!-- <span *ngIf="loginForm.valid"><iclass="fa fa-circle-o-notch fa-spin"   style="font-size:24px" ></i></span> -->
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <!-- <a class="underlineHover" href="#">Forgot Password?</a> -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

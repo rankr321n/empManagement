@@ -1,0 +1,229 @@
+{
+  "empDetails": [
+    {
+      "first_name": "Lindsay",
+      "last_name": "iusdhfiuaiusdfiahiuf",
+      "phone": 89238942874872380,
+      "email": "ghiudifuhiushdiufh",
+      "location": "Gurgaon",
+      "gid": "",
+      "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+      "id": 5300,
+      "date": 1566986158000
+    },
+    
+    {
+      "first_name": "özsu Adan",
+      "last_name": "Adan",
+      "phone": "4234242343",
+      "email": "u00f6zsu.adan@gmail.com",
+      "location": "London",
+      "id": 5302,
+      "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
+      "date": 1566813358000
+    },
+    {
+      "id": 5303,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+      "date": 1566726958000
+    },
+    {
+      "id": 5304,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+      "date": 1566640558000
+    },
+    {
+      "first_name": "Mike",
+      "last_name": "Joe",
+      "phone": 9015695400,
+      "contact": 9876543210,
+      "email": "mike@vinove.com",
+      "location": "New York",
+      "date": 1566554158000,
+      "gid": "4444-4444-4444",
+      "id": 5305,
+      "avatar": "https://randomuser.me/api/portraits/men/97.jpg"
+    },
+    {
+      "id": 5306,
+      "first_name": "Miyah",
+      "email": "miyah.myles@gmail.com",
+      "last_name": "Myles",
+      "position": "Business Analyst",
+      "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+      "date": 1566467758000
+    },
+    {
+      "id": 5307,
+      "first_name": "June Cha",
+      "last_name": "Cha",
+      "email": "june.cha@gmail.com",
+      "position": "Lead Developer",
+      "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+      "date": 1566381358000
+    },
+    {
+      "id": 5308,
+      "first_name": "Iida Niskanen",
+      "last_name": "Niskanen",
+      "email": "iida.niskanen@gmail.com",
+      "position": "Graphic Designer",
+      "avatar": "https://randomuser.me/api/portraits/women/68.jpg",
+      "date": 1566294958000
+    },
+    {
+      "id": 5309,
+      "first_name": "Renee Sims",
+      "last_name": "Sims",
+      "email": "renee.sims@gmail.com",
+      "position": "Marketing",
+      "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
+      "date": 1566208558000
+    },
+    {
+      "id": 5310,
+      "first_name": "Jonathan ",
+      "last_name": "Nu",
+      "email": "Jonathan.NU@gmail.com",
+      "position": "Accounting",
+      "avatar": "https://randomuser.me/api/portraits/men/43.jpg",
+      "date": 1566122158000
+    },
+    {
+      "first_name": "Randhir",
+      "last_name": "Kumar",
+      "phone": 9818696089,
+      "contact": 9818696089,
+      "email": "randhir@vinove.com",
+      "location": "Gurgaon",
+      "date": 1567072307066,
+      "gid": "8383-2838-2843",
+      "id": 5311
+    },
+    {
+      "first_name": "ahsjfkd",
+      "last_name": "kjsakdkajdh",
+      "phone": 2908492384932,
+      "contact": 9891823918,
+      "email": "kjkahkjfh@nkajsd.com",
+      "location": "klasjlkasklj",
+      "date": 1567073096443,
+      "gid": "asdfasfsafsaf",
+      "id": 5312
+    }
+  ],
+  "adminlogin": [
+    {
+      "id": 1,
+      "username": "randhir.sah@vinove.com",
+      "password": "vinove",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "username": "randhir@vinove.com",
+      "password": "vinove",
+      "role": "Admin"
+    }
+  ],
+  "userlogin": [
+    {
+      "id": 1,
+      "username": "hr@vinove.com",
+      "password": "hr@vinove",
+      "role": "User"
+    },
+    {
+      "id": 2,
+      "username": "hr2@vinove.com",
+      "password": "hr2@vinove",
+      "role": "User"
+    }
+  ],
+  "userdetails": [
+    {
+      "id": 1,
+      "Name": "HR 1",
+      "Designation": "Manager1",
+      "Department": "Operations"
+    },
+    {
+      "id": 2,
+      "Name": "HR 2",
+      "Designation": "Manager2",
+      "Department": "Operations"
+    },
+    {
+      "id": 3,
+      "Name": "HR 3",
+      "Designation": "Manager3",
+      "Department": "Operations"
+    },
+    {
+      "id": 4,
+      "Name": "HR 4",
+      "Designation": "Manager4",
+      "Department": "Operations"
+    },
+    {
+      "id": 5,
+      "Name": "HR 5",
+      "Designation": "Manager5",
+      "Department": "Operations"
+    },
+    {
+      "Name": "a",
+      "Designation": "a",
+      "Department": "a",
+      "id": 6
+    },
+    {
+      "Name": "R",
+      "Designation": "R",
+      "Department": "R",
+      "id": 7
+    },
+    {
+      "Name": "User",
+      "Designation": "USER",
+      "Department": "NEW",
+      "id": 8
+    },
+    {
+      "Name": "User",
+      "Designation": "USER",
+      "Department": "NEW",
+      "id": 9
+    },
+    {
+      "Name": "User",
+      "Designation": "USER",
+      "Department": "NEW",
+      "id": 10
+    },
+    {
+      "Name": "Randhir",
+      "Designation": "Trainee",
+      "Department": "Hr",
+      "id": 12
+    },
+    {
+      "Name": "NEW USER",
+      "Designation": "HR resource Partener",
+      "Department": "HR",
+      "id": 13
+    },
+    {
+      "Name": "",
+      "Designation": "",
+      "Department": "",
+      "id": 14
+    }
+  ]
+}

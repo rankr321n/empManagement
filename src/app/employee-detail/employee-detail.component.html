@@ -1,0 +1,99 @@
+<div class="container-fluid">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3">
+          <h2 class="text-center pull-left">
+            <span class="glyphicon glyphicon-list-alt"> </span> All Employees
+            details
+          </h2>
+        </div>
+        <div>
+          <div class="form-group">
+            <div class="navbar-form navbar-left">
+              <input
+                [(ngModel)]="empdata"
+                type="text"
+                class="form-control input-md"
+                name="search"
+                placeholder="Search Employee Data"
+              />
+
+              <button type="button" class="btn btn-md btn-warning">
+                <span class=" glyphicon glyphicon-search"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="nav navbar-nav navbar-right nav navbar-nav">
+          <button
+            style="padding:0.6em 2em;
+  border-radius: 8px;
+  color:#fff;
+  background-color:#1976d2;
+  font-size:1.1em;
+  border:0;
+  cursor:pointer;
+  margin:1em;"
+            class="mbtn blue"
+            routerLink="/user/dashboard/newempadd"
+          >
+            Add a New Employee
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-body table-responsive">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="text-center">EmpID.</th>
+            <th class="text-center">Name</th>
+            <th class="text-center">LastName</th>
+            <th class="text-center">E-Mail</th>
+            <th class="text-center">EmployeeImage</th>
+            <th class="text-center">View/Modify</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr
+            class="table-responsive"
+            id="detail"
+            *ngFor="let item of emp | filter: empdata"
+          >
+            <td id="no" class="text-center">{{ item._id }}</td>
+            <td id="name" class="text-center">{{ item.first_name }}</td>
+            <td id="mobile" class="text-center">{{ item.last_name }}</td>
+            <td id="mail" class="text-center">{{ item.email }}</td>
+            <td id="city" class="text-center">
+              <img src="{{ item.avatar }}" />
+            </td>
+            <td id="View" class="text-center">
+              <button
+                routerLink="/user/dashboard/empdetails/emp/view/{{ item._id }}"
+                class="btn btn-info "
+              >
+                <span class="fa fa-user"></span> View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel-footer">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <p class="muted pull-right">
+              <strong> © Randhir **EmployeeData** All rights reserved </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
